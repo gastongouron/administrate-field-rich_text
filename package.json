@@ -1,0 +1,7 @@
+{
+  "name": "administrate-field-rich_text",
+  "version": "0.0.1",
+  "dependencies": {
+    "quill": "latest"
+  }
+}

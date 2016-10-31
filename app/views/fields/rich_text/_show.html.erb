@@ -1,0 +1,12 @@
+<%#
+# Rich Text Show Partial
+This partial renders a rich text attribute,
+to be displayed on a resource's show page.
+By default, the attribute is rendered as read-only quill editor.
+## Local variables:
+- `field`:
+  An instance of Administrate::Field::RichText.
+  A wrapper around the rich text delta pulled from the database.
+%>
+
+<%= render_rich_text field.data %>
