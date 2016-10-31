@@ -8,19 +8,9 @@ $(function () {
       modules: { toolbar: true },
       theme: 'snow'
     });
-    try {
-      var contents = JSON.parse(atob($(el).data('quill-contents')));
-      quill.setContents(contents);
-    } catch (e) {
-      // No need to do anything, simply start with an empty editor.
-    }
-    $input.val(JSON.stringify(quill.getContents()));
+    $input.val(quill.root.innerHTML);
     quill.on('text-change', function () {
-      $input.val(JSON.stringify(quill.getContents()));
+      $input.val(quill.root.innerHTML);
     });
-  });
-  $('.quill-viewer').each(function () {
-    var quill = new Quill(this, { readOnly: true });
-    quill.setContents(JSON.parse(atob($(this).data('quill-contents'))));
   });
 });

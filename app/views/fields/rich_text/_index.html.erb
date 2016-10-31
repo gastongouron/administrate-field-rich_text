@@ -9,4 +9,4 @@ By default, the attribute is rendered as an unformatted string.
   A wrapper around the rich text delta pulled from the database.
 %>
 
-<%= render_plain_text field.data %>
+<%= field.data.html_safe %>
