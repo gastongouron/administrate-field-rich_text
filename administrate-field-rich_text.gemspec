@@ -1,11 +1,9 @@
 # coding: utf-8
 $:.push File.expand_path('../lib', __FILE__)
 
-require "administrate/field/rich_text"
-
 Gem::Specification.new do |spec|
   spec.name          = "administrate-field-rich_text"
-  spec.version       = Administrate::Field::RichText::VERSION
+  spec.version       = "0.0.1"
   spec.authors       = ["Herre Groen"]
   spec.email         = ["herregroen@noxqs.nl"]
   spec.homepage      = "https://www.noxqs.nl"
