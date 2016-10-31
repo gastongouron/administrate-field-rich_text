@@ -7,7 +7,7 @@ Adds a Rich Text field to administrate based on [QuillJS](http://quilljs.com/).
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'administrate-field-rich_text', git: 'git@git.noxqsapp.nl/gems/administrate-field-rich_text'
+gem 'administrate-field-rich_text', git: 'git@git.noxqsapp.nl:gems/administrate-field-rich_text'
 ```
 
 And then execute:
