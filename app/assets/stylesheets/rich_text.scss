@@ -2,4 +2,8 @@
 
 .field-unit--rich-text {
   align-items: baseline;
+
+  .ql-editor {
+    min-height: 200px;
+  }
 }
