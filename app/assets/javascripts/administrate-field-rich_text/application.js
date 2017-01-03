@@ -1,4 +1,4 @@
-//= require quill.min
+//= require administrate-field-rich_text/quill.min
 
 $(function () {
   $('.quill-editor').each(function () {
