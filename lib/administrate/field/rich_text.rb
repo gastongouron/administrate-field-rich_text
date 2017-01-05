@@ -9,9 +9,9 @@ module Administrate
 
       class Engine < ::Rails::Engine
         initializer "rich_text.assets" do |app|
-          app.config.assets.precompile += %w( rich_text.js rich_text.scss )
-          Administrate::Engine.add_javascript "rich_text"
-          Administrate::Engine.add_stylesheet "rich_text"
+          app.config.assets.precompile += %w( administrate-field-rich_text/application.js administrate-field-rich_text/application.scss )
+          Administrate::Engine.add_javascript "administrate-field-rich_text/application"
+          Administrate::Engine.add_stylesheet "administrate-field-rich_text/application"
         end
 
         initializer 'rich_text.form_helpers' do
