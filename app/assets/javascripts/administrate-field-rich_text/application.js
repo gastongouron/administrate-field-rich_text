@@ -15,7 +15,7 @@ var init = function () {
   });
 };
 
-if (window['TurboLinks']) {
+if (window['Turbolinks']) {
   document.addEventListener('turbolinks:load', init);
 } else {
   $(init);
