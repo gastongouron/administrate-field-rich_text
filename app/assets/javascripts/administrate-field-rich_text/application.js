@@ -1,6 +1,6 @@
 //= require administrate-field-rich_text/quill.min
 
-$(function () {
+document.addEventListener('turbolinks:load',function () {
   $('.quill-editor').each(function () {
     var el = this;
     var $input = $(this).siblings('.quill-input');
