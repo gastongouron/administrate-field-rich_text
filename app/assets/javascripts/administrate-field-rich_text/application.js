@@ -1,6 +1,6 @@
 //= require administrate-field-rich_text/quill.min
 
-document.addEventListener('turbolinks:load',function () {
+var init = function () {
   $('.quill-editor').each(function () {
     var el = this;
     var $input = $(this).siblings('.quill-input');
@@ -13,4 +13,10 @@ document.addEventListener('turbolinks:load',function () {
       $input.val(quill.root.innerHTML);
     });
   });
-});
+};
+
+if (window['TurboLinks']) {
+  document.addEventListener('turbolinks:load', init);
+} else {
+  $(init);
+}
