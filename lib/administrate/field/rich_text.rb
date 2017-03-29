@@ -18,6 +18,10 @@ module Administrate
           ActionView::Helpers::FormBuilder.send :include, RichTextFormHelper
         end
       end
+
+      def html_safe
+        data ? data.html_safe : ""
+      end
     end
   end
 end
